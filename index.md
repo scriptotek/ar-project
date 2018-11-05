@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Scriptotek
+title: The Library AR project
 lang: en
 ref: home
 ---
