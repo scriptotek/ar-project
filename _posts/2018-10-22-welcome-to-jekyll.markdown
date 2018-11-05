@@ -1,25 +1,39 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-10-22 11:52:05 +0200
-categories: jekyll update
+layout: default
+title: The Scriptotek
+lang: en
+ref: home
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+The Scriptotek (from “scripting” + the Norwegian word for “library”) is an open
+community for friendly librarians and their helpers within the Norwegian (Scandinavian?)
+library sector, whoever interested in coding to automate everyday tasks,
+create or improve services for our users, or what have you.
+[Some background in Norwegian](https://www.ub.uio.no/om/organisasjon/prosjekter/scriptotek/).
 
-Jekyll also offers powerful support for code snippets:
+- **Mailing list**
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+  [Join](https://sympa.uio.no/ub.uio.no/subscribe/scriptotek) our mailing list
+  if you're interested in discussing code projects, upcoming workshops
+  (library carpentry) or whatever. The main language for the list is Norwegian, but feel free
+  to write in English.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+- **Code sharing**
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+  We love using GitHub for code sharing. You'll find lots of projects on
+  [Scriptoteket](https://github.com/scriptotek/), and in addition the BI library
+  has their [own site](https://github.com/bisentralen/) with some cool
+  Alma and Primo stuff.
+
+- **Workshops**
+
+  During spring 2016 vi arranged [Biblioteksløyd
+  beta](https://scriptotek.github.io/2016-03-17-BS/) ([resource page](https://scriptotek.github.io/2016-03-17-BS/slides/)), inspired by
+  [Software Carpentry](http://software-carpentry.org/) and [Library
+  Carpentry](https://librarycarpentry.github.io/). We look forward to more
+  workshops in the future.
+
+- **Blog**
+
+  [There's a blog](/blog/) too, albeit not often updated. Anything you want to write about?
+
