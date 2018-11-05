@@ -10,8 +10,9 @@ The Library AR Project is a collaborative effort from Mandal public library and 
 You can read more about the project in the [About](https://scriptotek.github.io/ar-project/about/) section.
 
 # Testing of different platforms
-
 As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting.
+
+## Criteria for choice of platform
 The main criteria we use to evaulate the different platforms are:
 
 * Functionality
@@ -31,7 +32,18 @@ Since development is local, the ease of which the different applications can be 
 **Price**
 The Library AR Project will only implement solutions that either offer possibilities of free trials (for off-the-shelf applications) or is free open source. We document the different pricing (or lack of) and evaluate the gains from the pricing.
 
+## Specific platforms tested
+
+### AR.js
+
+**Benefits**
+* Can be directly implemented in browser
+* Works on any phone
+
+[Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
+
+
 # Blog
 
-  [There's a blog](https://scriptotek.github.io/ar-project/blog/) too, which we upate with current findings
+[There's a blog](https://scriptotek.github.io/ar-project/blog/) too, which we upate with current findings
 
