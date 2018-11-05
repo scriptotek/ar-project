@@ -48,6 +48,7 @@ The Library AR Project will only implement solutions that either offer possibili
 * There will likely be more performance issues when several markers are visible at the same time, which is required for wayfinding
 
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
+
 [On our blog](blog/arjs.md)
 
 
