@@ -36,11 +36,19 @@ The Library AR Project will only implement solutions that either offer possibili
 
 ### AR.js
 
+`javascript` `browser compatible` `multi device`
+
 **Benefits**
 * Can be directly implemented in browser
 * Works on any phone
 
+**Drawbacks**
+* A bit unstable, jittery augmentation which sometimes disappear alogether
+* Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker
+* There will likely be more performance issues when several markers are visible at the same time, which is required for wayfinding
+
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
+[On your blog](blog/arjs.md)
 
 
 # Blog
