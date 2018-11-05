@@ -49,7 +49,7 @@ The Library AR Project will only implement solutions that either offer possibili
 
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 
-[On our blog](blog/2018-11-05-arjs.md)
+[On our blog](blog/2018/11/05/arjs.html)
 
 
 # Blog
