@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Playing with the Alma APIs"
+title:  "Test blogpost"
 author: kyrretl
 date:   2018-05-11 14:13:00
 categories: blogpost test
