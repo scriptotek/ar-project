@@ -1,0 +1,230 @@
+---
+layout: post
+title:  "AR.js"
+author: kyrretl
+date:   2018-11-05 14:13:00
+categories: blogpost test
+---
+
+# AR.js
+
+Test code at:
+[https://ub-www01.uio.no/prosjekter/ar/] (https://ub-www01.uio.no/prosjekter/ar/).
+Needs to be opened with a browser on a smartphone, ipad, etc. or a computer with webcam.
+
+Print out this image (it is the marker you need to point the camera at): 
+![Printable marker for AR.js test code](../assets/kjemi-print.png "Printable marker for AR.js test code")
+
+To see it in action, you can watch this youtube video:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Y9jBTo0vghog
+" target="_blank"><img src="http://img.youtube.com/vi/9jBTo0vghog/0.jpg" 
+alt="AR.js example at the library" width="240" height="180" border="10" /></a>
+
+```
+<!DOCTYPE html>
+<head>
+	<title>Ar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- three.js library -->
+	<script src='https://jeromeetienne.github.io/AR.js/three.js/examples/vendor/three.js/build/three.min.js'></script>
+	<!-- ar.js -->
+	<script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.js"></script>
+	<script>THREEx.ArToolkitContext.baseURL = 'https://jeromeetienne.github.io/AR.js/three.js/'</script>
+</head>
+
+<body style='margin : 0px; overflow: hidden; width:100%; height:100%;'>
+
+<script>
+	//////////////////////////////////////////////////////////////////////////////////
+	//		Init
+	//////////////////////////////////////////////////////////////////////////////////
+	// init renderer
+	var renderer	= new THREE.WebGLRenderer({
+		antialias: true,
+		alpha: true
+	});
+	renderer.setClearColor(new THREE.Color('lightgrey'), 0)
+	renderer.setSize( 640, 480 );
+	renderer.domElement.style.position = 'absolute'
+	renderer.domElement.style.top = '0px'
+	renderer.domElement.style.left = '0px'
+	document.body.appendChild( renderer.domElement );
+	// array of functions for the rendering loop
+	var onRenderFcts= [];
+	// init scene and camera
+	var scene	= new THREE.Scene();
+		
+	//////////////////////////////////////////////////////////////////////////////////
+	//		Initialize a basic camera
+	//////////////////////////////////////////////////////////////////////////////////
+	// Create a camera
+	var camera = new THREE.Camera();
+	scene.add(camera);
+	////////////////////////////////////////////////////////////////////////////////
+	//          handle arToolkitSource
+	////////////////////////////////////////////////////////////////////////////////
+	var arToolkitSource = new THREEx.ArToolkitSource({
+		// to read from the webcam 
+		sourceType : 'webcam',
+		
+		// // to read from an image
+		// sourceType : 'image',
+		// sourceUrl : THREEx.ArToolkitContext.baseURL + '../data/images/img.jpg',		
+		// to read from a video
+		// sourceType : 'video',
+		// sourceUrl : THREEx.ArToolkitContext.baseURL + '../data/videos/headtracking.mp4',		
+	})
+	arToolkitSource.init(function onReady(){
+		onResize()
+	})
+	
+	// handle resize
+	window.addEventListener('resize', function(){
+		onResize()
+	})
+
+
+	function rotateObject(object,degreeX=0, degreeY=0, degreeZ=0){
+
+	   degreeX = (degreeX * Math.PI)/180;
+	   degreeY = (degreeY * Math.PI)/180;
+	   degreeZ = (degreeZ * Math.PI)/180;
+
+	   object.rotateX(degreeX);
+	   object.rotateY(degreeY);
+	   object.rotateZ(degreeZ);
+
+	}
+
+
+	function onResize(){
+		arToolkitSource.onResize()	
+		arToolkitSource.copySizeTo(renderer.domElement)	
+		if( arToolkitContext.arController !== null ){
+			arToolkitSource.copySizeTo(arToolkitContext.arController.canvas)	
+		}	
+	}
+	////////////////////////////////////////////////////////////////////////////////
+	//          initialize arToolkitContext
+	////////////////////////////////////////////////////////////////////////////////
+	
+	// create atToolkitContext
+	var arToolkitContext = new THREEx.ArToolkitContext({
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
+		detectionMode: 'mono',
+	})
+	// initialize it
+	arToolkitContext.init(function onCompleted(){
+		// copy projection matrix to camera
+		camera.projectionMatrix.copy( arToolkitContext.getProjectionMatrix() );
+	})
+	// update artoolkit on every frame
+	onRenderFcts.push(function(){
+		if( arToolkitSource.ready === false )	return
+		arToolkitContext.update( arToolkitSource.domElement )
+		
+		// update scene.visible if the marker is seen
+		scene.visible = camera.visible
+	})
+		
+	////////////////////////////////////////////////////////////////////////////////
+	//          Create a ArMarkerControls
+	////////////////////////////////////////////////////////////////////////////////
+	
+	// init controls for camera
+	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, camera, {
+		type : 'pattern',
+		patternUrl : 'marker.php',
+		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji',
+		// as we controls the camera, set changeMatrixMode: 'cameraTransformMatrix'
+		changeMatrixMode: 'cameraTransformMatrix'
+	})
+	// as we do changeMatrixMode: 'cameraTransformMatrix', start with invisible scene
+	scene.visible = false
+	//////////////////////////////////////////////////////////////////////////////////
+	//		add an object in the scene
+	//////////////////////////////////////////////////////////////////////////////////
+
+	var material = new THREE.MeshBasicMaterial( {color: 0x84C7FF, opacity:0.5, side: THREE.DoubleSide} );
+
+	//var geometry = new THREE.PlaneGeometry( 1, 2);
+	//var plane = new THREE.Mesh( geometry, material );
+	//plane.position.y= geometry.parameters.height/2;
+	//plane.position.x	= 4;
+	//rotateObject( plane, 90, 0 ,90);
+	//scene.add( plane );
+
+		 
+	var loader = new THREE.FontLoader();
+
+	loader.load('Open Sans_Regular.json', function ( font ) {
+		var textMaterial = new THREE.MeshBasicMaterial( {color: 0x84C7FF, opacity:0.5, side: THREE.DoubleSide} );
+
+		var textGeometry = new THREE.TextGeometry("Kjemisamlingen", {
+			font: font,
+			size: 0.4,
+			height: 0
+		});
+
+
+		var textMesh = new THREE.Mesh(textGeometry, textMaterial);
+
+		rotateObject( textMesh, 90, 180 ,180);
+		textMesh.position.x	= 1.7;
+		textMesh.position.y	= 0;
+		textMesh.position.z	= 0.15;
+		
+		scene.add(textMesh);
+
+
+	} );
+
+    // Do some optional calculations. This is only if you need to get the
+    // width of the generated text
+    //textGeom.computeBoundingBox();
+    //textGeom.textWidth = textGeom.boundingBox.max.x - textGeom.boundingBox.min.x;
+
+
+	var geom = new THREE.Geometry();
+	var v1 = new THREE.Vector3(0,0,0);
+	var v2 = new THREE.Vector3(1,0,0);
+	var v3 = new THREE.Vector3(0,1,0);
+
+	geom.vertices.push(v1);
+	geom.vertices.push(v2);
+	geom.vertices.push(v3);
+
+
+	geom.faces.push( new THREE.Face3( 0, 2, 1 ) );
+	geom.computeFaceNormals();
+
+	var mesh= new THREE.Mesh( geom, material );
+	mesh.position.x	= 1.5;
+	//mesh.position.y	= 6;
+	rotateObject( mesh, 90, 0 ,135);
+	scene.add( mesh );
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		render the whole thing on the page
+	//////////////////////////////////////////////////////////////////////////////////
+	// render the scene
+	onRenderFcts.push(function(){
+		renderer.render( scene, camera );
+	})
+	// run the rendering loop
+	var lastTimeMsec= null
+	requestAnimationFrame(function animate(nowMsec){
+		// keep looping
+		requestAnimationFrame( animate );
+		// measure time
+		lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
+		var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
+		lastTimeMsec	= nowMsec
+		// call each update function
+		onRenderFcts.forEach(function(onRenderFct){
+			onRenderFct(deltaMsec/1000, nowMsec/1000)
+		})
+	})
+</script></body>
+```
