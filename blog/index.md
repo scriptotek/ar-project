@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Scriptoteket - Blog
+title: Library AR Project - Blog
 ---
 
 <p>
