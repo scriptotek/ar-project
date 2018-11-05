@@ -4,7 +4,7 @@ title: Library AR Project - Blog
 ---
 
 <p>
-  <a href="/">home</a> » blog
+  <a href="{{ site.baseurl }}/">home</a> » blog
 </p>
 
 <div id="home">

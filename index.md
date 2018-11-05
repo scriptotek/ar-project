@@ -7,7 +7,7 @@ ref: home
 
 The Library AR Project is a collaborative effort from Mandal public library and Oslo Science Library to find practical application for Augmented Reality usage in a library and see which current avialable platforms are suitable. If it is practically feasible, we will develop a prototype app with real life usability.
 
-You can read more about the project in the [About](https://scriptotek.github.io/ar-project/about/) section.
+[Read more about the project](about/)
 
 # Testing of different platforms
 As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting.
@@ -45,5 +45,5 @@ The Library AR Project will only implement solutions that either offer possibili
 
 # Blog
 
-[There's a blog](https://scriptotek.github.io/ar-project/blog/) too, which we upate with current findings
+[There's a blog](blog/) too, which we upate with current findings
 
