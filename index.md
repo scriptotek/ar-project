@@ -38,15 +38,22 @@ The Library AR Project will only implement solutions that either offer possibili
 
 `javascript` `browser compatible` `multi device`
 
+AR.js is an open source javascript based development
+
 **Benefits** 
 * Functionality: Support for metadata and wayfinding through marker images
 * Accessibility: Can be directly implemented in browser, works on 'any' phone and pad
-* Ease of implementation: Javascript based can be implemented and modified relatively easily, with a somewhat active online community
+* Ease of implementation: Javascript based, can be implemented and modified relatively easily, with a somewhat active online community
 * Price: Free - open source
 
 **Drawbacks**
-* Functionality: A bit unstable, jittery augmentation which sometimes disappear altogether. Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker. There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding. No meshing. No cloud.
-* Accessibility: Performance varies between devices, predicted to give unpredictable outcomes when scaled up with more complex code which can in worst case lead to non-functionality on some devices. 
+* Functionality: A bit unstable, jittery augmentation which sometimes disappears altogether. Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker. There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding. ARjs has no mesh mapping, and no cloud persistance.
+* Accessibility: Performance varies between devices, predicted to give unpredictable outcomes when scaled up with more complex code which can in worst case lead to non-functionality on some devices. Future code maintenance might be reduced when WebXR takes over.
+
+**Evaluation**
+Possible to develop both wayfinding and metadata on this platform, but might put off users due to performance issues.
+Also, might suffer lack of future maintenance support when WebXR arrives.
+In short, we perfer looking for other solutions.
 
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 
@@ -54,6 +61,17 @@ The Library AR Project will only implement solutions that either offer possibili
 
 
 ### WebXR
+
+`javascript` `browser compatible` `multi device` `under development` `unstable` `experimental`
+
+The WebXR Device API will be the new W3C standard for web based virtual and augmented reality.
+
+
+* Functionality: Responsive and smooth performance, but unstable due to being under development.
+* Accessibility: 
+* Ease of implementation: 
+* Price: 
+
 
 ### 6d.ai
 
@@ -65,7 +83,11 @@ The Library AR Project will only implement solutions that either offer possibili
 
 ### EasyAR
 
+### Other resources
+
+[WebAR channel on slack WebVR](https://webvr.slack.com/messages/C3GC60HHN/)
+
 # Blog
 
-[There's a blog](blog/) too, which we upate with current findings
+[We have a blog](blog/) which we upate with current findings and tests
 
