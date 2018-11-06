@@ -5,7 +5,7 @@ lang: en
 ref: home
 ---
 
-The Library AR Project is a collaborative effort from Mandal public library and Oslo Science Library to find practical application for Augmented Reality usage in a library and see which current avialable platforms are suitable. If it is practically feasible, we will develop a prototype app with real life usability.
+The Library AR Project is a collaborative effort from Mandal public library and Oslo Science Library to find practical application for Augmented Reality usage in a library and see which current available platforms are suitable. If it is practically feasible, we will develop a prototype app with real life usability.
 
 [Read more about the project](about/)
 
@@ -43,9 +43,11 @@ The Library AR Project will only implement solutions that either offer possibili
 * Works on any phone
 
 **Drawbacks**
-* A bit unstable, jittery augmentation which sometimes disappear alogether
-* Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker
-* There will likely be more performance issues when several markers are visible at the same time, which is required for wayfinding
+* A bit unstable, jittery augmentation which sometimes disappear altogether.
+* Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker.
+* There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding.
+* No meshing
+* No cloud
 
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 
