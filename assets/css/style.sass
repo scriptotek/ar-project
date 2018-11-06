@@ -1,8 +1,25 @@
 ---
 ---
 
-@import "{{ site.theme }}"
+@import "base.scss"
 
+@media screen and (min-width: 800px)
+
+    .wrapper
+        max-width: calc(960px - (30px * 2))
+
+// Center images and add border
 img
     border: 1px solid #ddd !important
+    display: block
+    margin: 0 auto
+
+// Tweak code highlighting style
+pre
+    padding: 16px
+pre, code
+    background: #fafafa
+    border-radius: 3px
+    border: none
+
 
