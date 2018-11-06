@@ -38,21 +38,32 @@ The Library AR Project will only implement solutions that either offer possibili
 
 `javascript` `browser compatible` `multi device`
 
-**Benefits**
-* Can be directly implemented in browser
-* Works on any phone
+**Benefits** 
+* Functionality: Support for metadata and wayfinding through marker images
+* Accessibility: Can be directly implemented in browser, works on 'any' phone and pad
+* Ease of implementation: Javascript based can be implemented and modified relatively easily, with a somewhat active online community
+* Price: Free - open source
 
 **Drawbacks**
-* A bit unstable, jittery augmentation which sometimes disappear altogether.
-* Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker.
-* There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding.
-* No meshing
-* No cloud
+* Functionality: A bit unstable, jittery augmentation which sometimes disappear altogether. Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker. There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding. No meshing. No cloud.
+* Accessibility: Performance varies between devices, predicted to give unpredictable outcomes when scaled up with more complex code which can in worst case lead to non-functionality on some devices. 
 
 [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 
 [On our blog](blog/2018/11/05/arjs.html)
 
+
+### WebXR
+
+### 6d.ai
+
+### Vuforia
+
+### Wikitude
+
+### ARCore
+
+### EasyAR
 
 # Blog
 
