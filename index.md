@@ -66,11 +66,22 @@ In short, we perfer looking for other solutions.
 
 The WebXR Device API will be the new W3C standard for web based virtual and augmented reality.
 
+* Functionality: Responsive and smooth performance, but unstable due to being under development. Also, Chrome Canary (which is required) is often unstable and/or crashes when used with WebXR.
+* Accessibility: Currently very low accessiblity, Android Origo 8.0 or later, ARCore and only Chrome Canary can be used and a couple of flags need to be set (see blog post below for details). 
+* Ease of implementation: Javascript based, can be implemented and modified relatively easily, there are some good working examples of the API being used
+* Price: Free - open source
 
-* Functionality: Responsive and smooth performance, but unstable due to being under development.
-* Accessibility: 
-* Ease of implementation: 
-* Price: 
+
+[WebXR Device API](https://immersive-web.github.io/webxr/)
+
+[WebXR channel on Slack](https://webvr.slack.com/messages/C3GC60HHN/)
+ 
+[Augmented reality samples](https://immersive-web.github.io/webxr-samples/proposals/)
+ 
+[Google XR-demo](https://web-education-ar-demo.appspot.com/)  
+[Information on setup for the XR-demo](https://developers.google.com/web/updates/2018/06/webar-chacmool)
+
+[On our blog](blog/2018/11/05/webxr.html)
 
 
 ### 6d.ai
