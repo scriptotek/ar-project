@@ -66,10 +66,14 @@ In short, we perfer looking for other solutions.
 
 The WebXR Device API will be the new W3C standard for web based virtual and augmented reality.
 
+**Benefits and drawbaks** 
 * Functionality: Responsive and smooth performance, but unstable due to being under development. Also, Chrome Canary (which is required) is often unstable and/or crashes when used with WebXR.
 * Accessibility: Currently very low accessiblity, Android Origo 8.0 or later, ARCore and only Chrome Canary can be used and a couple of flags need to be set (see blog post below for details). 
 * Ease of implementation: Javascript based, can be implemented and modified relatively easily, there are some good working examples of the API being used
 * Price: Free - open source
+
+**Evaluation**
+The WebXR Device API is the future of web based AR, but since it is in its very infancy with currently very low accessibility it is not suitable for the Library AR project.
 
 
 [WebXR Device API](https://immersive-web.github.io/webxr/)
