@@ -84,7 +84,7 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
  
 [Google XR-demo](https://web-education-ar-demo.appspot.com/) - [Information on setup for the XR-demo] (https://developers.google.com/web/updates/2018/06/webar-chacmool)
 
-[On our blog](blog/2018/11/05/webxr.html)
+[On our blog](blog/2018/11/07/webxr.html)
 
 
 ### 6d.ai
