@@ -55,9 +55,9 @@ Possible to develop both wayfinding and metadata on this platform, but might put
 Also, might suffer lack of future maintenance support when WebXR arrives.
 In short, we perfer looking for other solutions.
 
-[Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
-
-[On our blog](blog/2018/11/05/arjs.html)
+**Sources**
+* [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
+* [On our blog](blog/2018/11/05/arjs.html)
 
 
 ### WebXR
@@ -75,18 +75,13 @@ The WebXR Device API will be the new W3C standard for web based virtual and augm
 **Evaluation**
 The WebXR Device API is the future of web based AR, but since it is in its very infancy with currently very low accessibility it is not suitable for the Library AR project.
 
-
-[WebXR Device API](https://immersive-web.github.io/webxr/)
-
-[WebAR channel on Slack](https://webvr.slack.com/messages/C3GC60HHN/)
-
-[Augmented reality samples](https://immersive-web.github.io/webxr-samples/proposals/)
- 
-[Google XR-demo](https://web-education-ar-demo.appspot.com/)
-[Information on setup for the XR-demo](https://developers.google.com/web/updates/2018/06/webar-chacmool)
-
-[On our blog](blog/2018/11/07/webxr.html)
-
+**Sources**
+* [WebXR Device API](https://immersive-web.github.io/webxr/)
+* [WebAR channel on Slack](https://webvr.slack.com/messages/C3GC60HHN/)
+* [Augmented reality samples](https://immersive-web.github.io/webxr-samples/proposals/)
+* [Google XR-demo](https://web-education-ar-demo.appspot.com/)
+* [Information on setup for the XR-demo](https://developers.google.com/web/updates/2018/06/webar-chacmool)
+* [On our blog](blog/2018/11/07/webxr.html)
 
 ### 6d.ai
 
@@ -104,7 +99,11 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 **Evaluation**
 6D Reality Platform is the most promnising AR platforms out there, with many features essensial for AR in a library contex such as meshing and cloud persitence. It also hs the added benefit of object occlusion which enhances user experience. For our project it is unfortunately not come far enough for testing (ie. Android support not ready this year) and also does not support javascript/browsers. In addition, the requirement of experience with Unity represents a developmental overhead.
 
-[6d.ai developer channel on Slack](https://6d-developers.slack.com)
+**Sources**
+
+* [Product description](https://www.6d.ai/product/)
+* [Developer pages](https://dashboard.6d.ai/user/dashboard/?view=home)
+* [6d.ai developer channel on Slack](https://6d-developers.slack.com)
  
 
 ### Vuforia
@@ -120,10 +119,11 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 * Price: 
 
 **Evaluation**
+We chose to use the similar platform Wikitude instead, see below, the evaluation will be the same.
 
-
-[Vuforia for developers](https://developer.vuforia.com/support)
-[Vuforia Youtube-howto](https://www.youtube.com/watch?v=MtiUx_szKbI)
+**Sources**
+* [Vuforia for developers](https://developer.vuforia.com/support)
+* [Vuforia Youtube-howto](https://www.youtube.com/watch?v=MtiUx_szKbI)
 
 ### Wikitude
 
