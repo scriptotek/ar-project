@@ -78,8 +78,8 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-[WebXR channel on Slack](https://webvr.slack.com/messages/C3GC60HHN/)
- 
+[WebAR channel on Slack](https://webvr.slack.com/messages/C3GC60HHN/)
+
 [Augmented reality samples](https://immersive-web.github.io/webxr-samples/proposals/)
  
 [Google XR-demo](https://web-education-ar-demo.appspot.com/)
@@ -90,7 +90,7 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 ### 6d.ai
 
-`C++/C#` `mesh` `cloud` `persistance` `app based` `iOS` `under development` `unstable`
+`C++/C#` `mesh` `cloud` `persistance` `app based` `iOS` `under development` `unstable` `Unity`
 
 [6d.ai](https://www.6d.ai/) is a new company creating a "6D Reality Platform" specializing on mesh based AR with cloud based persistence. Currently only app based (no browser implementation available) and at the moment their platform only supports iOS, with Android support scheduled for 2019.
 
@@ -109,6 +109,22 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 ### Vuforia
 
+`C++/C#` `app based` `iOS/Android` `Unity`
+
+[Vuforia](https://www.vuforia.com/) is on of the most well known app based platforms for AR. Although we did research on Vuforia, we did not test the platform. The reason is that Wikitude, which is very similar, has a free offer for public institutions with more functionalities than Vuforia. Apart from that Vuforia seems to have somewhat more examples of functional apps and code that Wikitude has.
+
+**Benefits and drawbaks** 
+* Functionality: .
+* Accessibility: .
+* Ease of implementation: 
+* Price: 
+
+**Evaluation**
+
+
+[Vuforia for developers](https://developer.vuforia.com/support)
+[Vuforia Youtube-howto](https://www.youtube.com/watch?v=MtiUx_szKbI)
+
 ### Wikitude
 
 ### ARCore
@@ -117,7 +133,8 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 ### Other resources
 
-[WebAR channel on slack WebVR](https://webvr.slack.com/messages/C3GC60HHN/)
+[Wepage comparing different AR platforms](http://socialcompare.com/en/comparison/ar-frameworks-388frkga)
+
 
 # Blog
 
