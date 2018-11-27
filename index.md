@@ -10,7 +10,7 @@ The Library AR Project is a collaborative effort from Mandal public library and 
 [Read more about the project](about/)
 
 # Evaluation of different platforms
-As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting. 
+As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting.  
 We evaluated 7 platforms, most were also tested locally:
 1. AR.js
 2. WebXR
