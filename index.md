@@ -60,7 +60,6 @@ In short, we perfer looking for other solutions.
 * [Source on github](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 * [On our blog](blog/2018/11/05/arjs.html)
 
-### ARCore
 
 ### WebXR
 
@@ -109,6 +108,26 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
  
 ### EasyAR
 
+
+### ARCore
+
+`app based` `iOS/Android` `Unity` `under development`
+
+[ARCore](https://www.wikitude.com/) is Googles platform for developing apps for AR. Unlike Apples ARKit, ARCore works on #both# iOS and Android.
+
+**Benefits and drawbaks** 
+* Functionality: Quite stable although being under development. Most apps that use AR (such as IKEA and Amazon) uses ARCore. Lacks support for persistence (no more than 7 days), see source 'Blog testing ARCore' below for details. Centered around hit boxes and anchors, not mesh.
+* Accessibility: Only on apps, but supports both iOS and Android.
+* Ease of implementation: Quite easy to implement with Unity, but requires knowledge of Unity to get past basic functionality. Decent coverage on tutorials and examples.
+* Price: Free - open source
+
+**Evaluation**
+Due to lack of persistence (which is needed for stable wayfinding) ARCore is somewhat less applicable for us than both Vuforia and Wikitude (see below). Aside from that, ARCore with Unity is developed and implemented in much the same manner as with Vuforia/Wikitude.
+
+**Sources**
+
+[ARCore quickstart for Android](https://developers.google.com/ar/develop/unity/quickstart-android)
+[Blog testing ARCore](https://medium.com/inborn-experience/why-google-cloud-anchors-doesnt-deliver-on-the-hype-e5d0a3fe704d)
 
 ### Vuforia
 
