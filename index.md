@@ -108,24 +108,43 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 ### Vuforia
 
-`C++/C#` `app based` `iOS/Android` `Unity`
+`app based` `iOS/Android` `Unity`
 
 [Vuforia](https://www.vuforia.com/) is on of the most well known app based platforms for AR. Although we did research on Vuforia, we did not test the platform. The reason is that Wikitude, which is very similar, has a free offer for public institutions with more functionalities than Vuforia. Apart from that Vuforia seems to have somewhat more examples of functional apps and code that Wikitude has.
 
 **Benefits and drawbaks** 
-* Functionality: .
-* Accessibility: .
-* Ease of implementation: 
-* Price: 
+* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with scence and object recognition.
+* Accessibility: No support for web/javascript, needs iOS or Android apps.
+* Ease of implementation: Well documented with examples and tutorials, experience with Unity is needed, but because of good tutorials the overhead is reduced substantially.
+* Price: One-time withot cloud support: $499. Monthy cloud-based subscription: $99. Check link below for details and price updates
 
 **Evaluation**
-We chose to use the similar platform Wikitude instead, see below, the evaluation will be the same.
+We chose to use Wikitude instead, see below, the evaluation is very similar.
 
 **Sources**
+* [Vuforia pricing](https://developer.vuforia.com/vui/pricing)
 * [Vuforia for developers](https://developer.vuforia.com/support)
 * [Vuforia Youtube-howto](https://www.youtube.com/watch?v=MtiUx_szKbI)
 
 ### Wikitude
+
+`app based` `javascript` `iOS/Android` `Unity`
+
+[Vuforia](https://www.vuforia.com/) is on of the most well known app based platforms for AR. Although we did research on Vuforia, we did not test the platform. The reason is that Wikitude, which is very similar, has a free offer for public institutions with more functionalities than Vuforia. Apart from that Vuforia seems to have somewhat more examples of functional apps and code that Wikitude has.
+
+**Benefits and drawbaks** 
+* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with scence and object recognition.
+* Accessibility: No support for web/javascript, needs iOS or Android apps.
+* Ease of implementation: Well documented with examples and tutorials, experience with Unity is needed, but because of good tutorials the overhead is reduced substantially.
+* Price: One-time withot cloud support: $499. Monthy cloud-based subscription: $99. Check link below for details and price updates
+
+**Evaluation**
+We chose to use Wikitude instead, see below, the evaluation is very similar.
+
+**Sources**
+* [Vuforia pricing](https://developer.vuforia.com/vui/pricing)
+* [Vuforia for developers](https://developer.vuforia.com/support)
+* [Vuforia Youtube-howto](https://www.youtube.com/watch?v=MtiUx_szKbI)
 
 ### ARCore
 
