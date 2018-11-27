@@ -47,7 +47,7 @@ AR.js is an open source javascript based development
 * Price: Free - open source
 
 **Drawbacks**
-* Functionality: A bit unstable, jittery augmentation which sometimes disappears altogether. Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker. There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding. ARjs has no mesh mapping, and no cloud persistance.
+* Functionality: A bit unstable, jittery augmentation which sometimes disappears altogether. Requires the markers to be very simple in detail and color, with high contrast, so for example a book cover cannot be used as a marker. There will likely be more performance issues when several markers are visible at the same time, which is required for continuous wayfinding. ARjs has no mesh mapping, and no cloud persistence.
 * Accessibility: Performance varies between devices, predicted to give unpredictable outcomes when scaled up with more complex code which can in worst case lead to non-functionality on some devices. Future code maintenance might be reduced when WebXR takes over.
 
 **Evaluation**
@@ -89,6 +89,23 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 
 ### 6d.ai
+
+`C++/C#` `mesh` `cloud` `persistance` `app based` `iOS` `under development` `unstable`
+
+[6d.ai](https://www.6d.ai/) is a new company creating a "6D Reality Platform" specializing on mesh based AR with cloud based persistence. Currently only app based (no browser implementation available) and at the moment their platform only supports iOS, with Android support scheduled for 2019.
+
+**Benefits and drawbaks** 
+* Functionality: Responsive and smooth performance, but can be somewhat unstable due to being under development.
+  Has realtime device based meshing with object occlusion and cloud storage for persistence.
+* Accessibility: Currently very low accessiblity, only Apple products with a variety of iPhone support, but only for quite new iPads (down to iPhone 7, iPad Pro and iPad 2018 (6th Gen). Android support is planned for 2019, but here will also quite new phones be required.
+* Ease of implementation: Expert knowledge required: Experience with C++/C# iOS native app development and experience with Unity or SceneKit
+* Price: Beta has free siqn up - will expected to be a paid subscription service
+
+**Evaluation**
+6D Reality Platform is the most promnising AR platforms out there, with many features essensial for AR in a library contex such as meshing and cloud persitence. It also hs the added benefit of object occlusion which enhances user experience. For our project it is unfortunately not come far enough for testing (ie. Android support not ready this year) and also does not support javascript/browsers. In addition, the requirement of experience with Unity represents a developmental overhead.
+
+[6d.ai developer channel on Slack](https://6d-developers.slack.com)
+ 
 
 ### Vuforia
 
