@@ -9,8 +9,16 @@ The Library AR Project is a collaborative effort from Mandal public library and 
 
 [Read more about the project](about/)
 
-# Testing of different platforms
-As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting.
+# Evaluation of different platforms
+As of October 2018, there are many available platforms, but not all are as suitable for AR development in a library setting. 
+We evaluated 7 platforms, most were also tested locally:
+* 1. AR.js
+* 2. WebXR
+* 3. 6d.ai
+* 4. EasyAR
+* 5. ARCore
+* 6. Vuforia
+* 7. Wikitude
 
 ## Criteria for choice of platform
 The main criteria we use to evaulate the different platforms are:
