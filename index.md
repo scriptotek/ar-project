@@ -175,5 +175,5 @@ We chose to use Wikitude instead, see below, the evaluation is very similar.
 
 # Blog
 
-[We have a blog](blog/) which we upate with current findings and tests
+[We have a blog](blog/) which we udpate with current findings and tests
 
