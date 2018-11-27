@@ -101,7 +101,6 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 6D Reality Platform is the most promnising AR platforms out there, with many features essensial for AR in a library contex such as meshing and cloud persitence. It also hs the added benefit of object occlusion which enhances user experience. For our project it is unfortunately not come far enough for testing (ie. Android support not ready this year) and also does not support javascript/browsers. In addition, the requirement of experience with Unity represents a developmental overhead.
 
 **Sources**
-
 * [Product description](https://www.6d.ai/product/)
 * [Developer pages](https://dashboard.6d.ai/user/dashboard/?view=home)
 * [6d.ai developer channel on Slack](https://6d-developers.slack.com)
@@ -113,7 +112,7 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 `app based` `iOS/Android` `Unity` `under development`
 
-[ARCore](https://www.wikitude.com/) is Googles platform for developing apps for AR. Unlike Apples ARKit, ARCore works on #both# iOS and Android.
+[ARCore](https://www.wikitude.com/) is Google's platform for developing apps for AR. Unlike Apple's ARKit, ARCore works on *both* iOS and Android.
 
 **Benefits and drawbaks** 
 * Functionality: Quite stable although being under development. Most apps that use AR (such as IKEA and Amazon) uses ARCore. Lacks support for persistence (no more than 7 days), see source 'Blog testing ARCore' below for details. Centered around hit boxes and anchors, not mesh.
@@ -125,7 +124,6 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 Due to lack of persistence (which is needed for stable wayfinding) ARCore is somewhat less applicable for us than both Vuforia and Wikitude (see below). Aside from that, ARCore with Unity is developed and implemented in much the same manner as with Vuforia/Wikitude.
 
 **Sources**
-
 [ARCore quickstart for Android](https://developers.google.com/ar/develop/unity/quickstart-android)
 [Blog testing ARCore](https://medium.com/inborn-experience/why-google-cloud-anchors-doesnt-deliver-on-the-hype-e5d0a3fe704d)
 
