@@ -40,7 +40,7 @@ Since development is local, the ease of which the different applications can be 
 **Price**
 The Library AR Project will only implement solutions that either offer possibilities of free trials (for off-the-shelf applications) or is free open source. We document the different pricing (or lack of) and evaluate the gains from the pricing.
 
-## Specific platforms tested
+## Specific platforms evaluated
 
 
 ### AR.js
