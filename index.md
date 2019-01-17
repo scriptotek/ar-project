@@ -179,5 +179,5 @@ Also, initial testing with examples from their web site proved the platform to b
 
 # Blog
 
-[We have a blog](blog/) where we detail some of the platformtesting we did and also the final prototype! So do check it out.
+[We have a blog](blog/) where we detail some of the platform testing we did and also the final prototype! So do check it out.
 
