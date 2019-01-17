@@ -15,10 +15,9 @@ We evaluated 7 platforms, most were also tested locally:
 1. AR.js
 2. WebXR
 3. 6d.ai
-4. EasyAR
-5. ARCore
-6. Vuforia
-7. Wikitude
+4. ARCore
+5. Vuforia
+6. Wikitude
 
 ## Criteria for choice of platform
 The main criteria we use to evaulate the different platforms are:
@@ -113,8 +112,6 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 * [Developer pages](https://dashboard.6d.ai/user/dashboard/?view=home)
 * [6d.ai developer channel on Slack](https://6d-developers.slack.com)
  
-### EasyAR
-
 
 ### ARCore
 
@@ -142,9 +139,9 @@ Due to lack of persistence (which is needed for stable wayfinding) ARCore is som
 [Vuforia](https://www.vuforia.com/) is one of the most well known app based platforms for AR. Although we did research on Vuforia, we did not test the platform. The reason is that Wikitude, which is very similar, has a free offer for public institutions with more functionalities than Vuforia. Apart from that Vuforia seems to have somewhat more examples of functional apps and code that Wikitude has.
 
 **Benefits and drawbaks** 
-* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with scence and object recognition.
+* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with imgae, scence and object recognition.
 * Accessibility: No support for web/javascript, needs iOS or Android apps.
-* Ease of implementation: Well documented with examples and tutorials, experience with Unity is needed, but because of good tutorials the overhead is reduced substantially.
+* Ease of implementation: Well documented with examples and tutorials, experience with third party programs such as Unity is needed, but because of good tutorials the overhead is reduced substantially.
 * Price: One-time withot cloud support: $499. Monthy cloud-based subscription: $99. Check link below for details and price updates
 
 **Evaluation**
@@ -159,20 +156,22 @@ We chose to use Wikitude instead, see below, the evaluation is very similar.
 
 `app based` `javascript` `iOS/Android` `Unity`
 
-[Wikitude](https://www.wikitude.com/) .
+[Wikitude](https://www.wikitude.com/) along with Vuforia and 6d.ai were the professional platforms delivered by private companies we evaluated. As such they have robust functionality, support for many different kind of developers, and is compatible with mant third party programs (such as Unity). 
+
 
 **Benefits and drawbaks** 
-* Functionality: .
-* Accessibility: .
-* Ease of implementation: .
-* Price:  Check link below for details and price updates
+* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with image, scence and object recognition.
+* Accessibility: Has a javsacript API for communication SDK for Android (among others).
+* Ease of implementation: Well documented with examples and some video tutorials, blogs and forum.
+* Price: Se link below for pricing
 
 **Evaluation**
-
+For us being web developers in a science library, it was the possibility of using their [javaScript SDK API](https://www.wikitude.com/external/doc/documentation/latest/android/) along with [a free educational licence](https://www.wikitude.com/wikitude-academy/) that made us chose Wikitude as the platform for our prototype.
+Also, initial testing with examples from their web site proved the platform to be fast and stable on our Android phones (Samsung Galaxy s8 and Sony Xperia XZ1 Compact).
 
 **Sources**
-
-
+Wikitude pricing can be found in the [store](https://www.wikitude.com/store/).
+[Blogpost] (https://scriptotek.github.io/ar-project/blog/2019/01/17/wikitude.html) on the testing of Wikitude (and the development of our final AR-prototype).
 
 ### Other resources
 
