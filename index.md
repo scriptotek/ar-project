@@ -95,7 +95,7 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 
 `C++/C#` `mesh` `cloud` `persistance` `app based` `iOS` `under development` `unstable` `Unity`
 
-[6d.ai](https://www.6d.ai/) is a new company creating a "6D Reality Platform" specializing on mesh based AR with cloud based persistence. Currently only app based (no browser implementation available) and at the moment their platform only supports iOS, with Android support scheduled for 2019.
+[6d.ai](https://www.6d.ai/) is a new company creating a "6D Reality Platform" specializing on mesh based AR with cloud based persistence. Currently only app based (no browser implementation available) and at the time of writing (november 2018) their platform only supports iOS, with Android support scheduled for 2019.
 
 **Benefits and drawbaks** 
 * Functionality: Responsive and smooth performance, but can be somewhat unstable due to being under development.
@@ -105,7 +105,7 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 * Price: Beta has free siqn up - will expected to be a paid subscription service
 
 **Evaluation**
-6D Reality Platform is the most promnising AR platforms out there, with many features essensial for AR in a library contex such as meshing and cloud persitence. It also hs the added benefit of object occlusion which enhances user experience. For our project it is unfortunately not come far enough for testing (ie. Android support not ready this year) and also does not support javascript/browsers. In addition, the requirement of experience with Unity represents a developmental overhead.
+6D Reality Platform is the most promising AR platforms out there, with many features essensial for AR in a library contex such as meshing and cloud persitence. It also hs the added benefit of object occlusion which enhances user experience. For our project it is unfortunately not come far enough for testing (ie. Android support not ready this year) and also does not support javascript/browsers. In addition, the requirement of experience with Unity represents a developmental overhead.
 
 **Sources**
 * [Product description](https://www.6d.ai/product/)
