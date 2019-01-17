@@ -129,8 +129,8 @@ The WebXR Device API is the future of web based AR, but since it is in its very 
 Due to lack of persistence (which is needed for stable wayfinding) ARCore is somewhat less applicable for us than both Vuforia and Wikitude (see below). Aside from that, ARCore with Unity is developed and implemented in much the same manner as with Vuforia/Wikitude.
 
 **Sources**
-[ARCore quickstart for Android](https://developers.google.com/ar/develop/unity/quickstart-android)
-[Blog testing ARCore](https://medium.com/inborn-experience/why-google-cloud-anchors-doesnt-deliver-on-the-hype-e5d0a3fe704d)
+* [ARCore quickstart for Android](https://developers.google.com/ar/develop/unity/quickstart-android)
+* [Blog testing ARCore](https://medium.com/inborn-experience/why-google-cloud-anchors-doesnt-deliver-on-the-hype-e5d0a3fe704d)
 
 ### Vuforia
 
@@ -177,8 +177,7 @@ Also, initial testing with examples from their web site proved the platform to b
 
 [Wepage comparing different AR platforms](http://socialcompare.com/en/comparison/ar-frameworks-388frkga)
 
-
 # Blog
 
-[We have a blog](blog/) which we udpate with current findings and tests
+[We have a blog](blog/) where we detail some of the platformtesting we did and also the final prototype! So do check it out.
 
