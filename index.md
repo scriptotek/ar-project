@@ -170,8 +170,8 @@ For us being web developers in a science library, it was the possibility of usin
 Also, initial testing with examples from their web site proved the platform to be fast and stable on our Android phones (Samsung Galaxy s8 and Sony Xperia XZ1 Compact).
 
 **Sources**
-* Wikitude pricing can be found in the [store](https://www.wikitude.com/store/).
-* [Blogpost] (https://scriptotek.github.io/ar-project/blog/2019/01/17/wikitude.html) on the testing of Wikitude (and the development of our final AR-prototype).
+* [Wikitude pricing](https://www.wikitude.com/store/).
+* [Blogpost](https://scriptotek.github.io/ar-project/blog/2019/01/17/wikitude.html) on the testing of Wikitude (and the development of our final AR-prototype).
 
 ### Other resources
 
