@@ -5,7 +5,13 @@ lang: en
 ref: home
 ---
 
-The Library AR Project is a collaborative effort from Mandal public library and Oslo Science Library to find practical application for Augmented Reality usage in a library and see which current available platforms are suitable. If it is practically feasible, we will develop a prototype app with real life usability.
+The Library AR Project is a collaborative effort from Mandal public library and Oslo Science Library to find practical application for Augmented Reality (AR) usage in a library and see which current available platforms are suitable. Also a protoype using the chosen platform will be developed for testing. 
+
+The two functionalities we want this prototype to have are:
+* Wayfinding (locating books in the library)
+* Eextra information on books (metadata)
+
+We are using mobile phones as physical units (rather than eyeglasses or head mounted displays) because we see this as more practical and available at the moment (late 2018).
 
 [Read more about the project](about/)
 
