@@ -31,14 +31,14 @@ Since no platform (as of october 2018) had a properly functioning mesh cloud, wh
 Since the collections we wanted to include in our prototype typically has thousands of books, the largest having 10 000, so we wondered if we could upload these images to Wikitude studio by bulk from our vendor (ExLibris or ProQuest). Wikitude's educational license allows us to have up to 50 000 images so this seemed very possible. 
 
 We tested first by uploading a couple of covers from our vendor to check how the prototype app responded when shown the physical books.
-We uploaded first the image provided by our vendor, but this image had too low quality (128 pixels x 199 pixels, Wikitude recommends between 500 and 1000 px). Since we couldn't user our vendor's image, we downloaded a similar higher resolution from a web search just to test. 
+We uploaded first the image provided by our vendor, but this image had too low quality (128 pixels x 199 pixels, Wikitude recommends between 500 and 1000 px). Since we couldn't use our vendor's image, we downloaded a similar higher resolution from a web search just to test. 
 
 ![Sapiens inital book cover images](https://scriptotek.github.io/ar-project/assets/sapiens_bad_covers.png)
 
 
-The app did not react to the high resolution image at all, and we noticed that it was slightly different than our cover, for example the top text "The Sunday Times Top Ten bestseller" did not exist on our cover, instead it said "The Million Copy Bestseller" and also the bottom recommendation was different.
+The app did not react to the high resolution image at all, and we noticed that it was slightly different than our cover, for example the top text "The Sunday Times Top Ten bestseller" was replaced by "The Million Copy Bestseller" and also the bottom praise text was different.
 
-We then managed to find a clear, high resolution exact replica of our book's cover, but the app still did not respond. We found out that the only way to get the app to recognize the book cover was to take a picture of our physical book and upload this image to Wikitude!
+We then managed to find a clear, high resolution exact replica of our book's cover, but the app still would not respond. In fact, the only way to get the app to recognize the book cover was to take a picture of our physical book and upload this image to Wikitude!
 
 In order to accomodate different lighting situations and maximize the chance of recognition, we took four different images of the book and uploaded these:
 
