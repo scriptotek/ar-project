@@ -165,7 +165,7 @@ Also, initial testing with examples from their web site proved the platform to b
 
 **Sources**
 * [Wikitude pricing](https://www.wikitude.com/store/).
-* [Blogpost](https://scriptotek.github.io/ar-project/blog/2019/01/17/wikitude.html) on the testing of Wikitude (and the development of our final AR-prototype).
+* [Blogpost](https://scriptotek.github.io/ar-project/blog/2019/01/17/prototype.html) on the testing of Wikitude (and the development of our final AR-prototype).
 
 ### Other resources
 
