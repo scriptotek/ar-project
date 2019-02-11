@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Library AR Project - Blog
+title: Blog
 ---
 
 <p>
