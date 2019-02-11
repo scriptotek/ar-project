@@ -39,7 +39,7 @@ First we tested the image provided by our vendor, but this image had too low qua
 
 The app did not react to the high resolution image at all, and we noticed that it was slightly different than our cover, for example the top text "The Sunday Times Top Ten bestseller" was replaced by "The Million Copy Bestseller" and also the bottom praise text was different.
 
-We then managed to find a clear, high resolution exact replica of our book's cover, but the app still would not respond. In fact, the only way to get the app to recognize the book cover was to take a picture of our physical book and upload this image to Wikitude!
+We managed to find a clear, high resolution replica of our book's cover, but the app still would not respond. In fact, the only way to get the app to recognize the book cover was to take a picture of our physical book (with a camera or phone) and upload this image to Wikitude!
 
 In order to accomodate different lighting situations and maximize the chance of recognition, we took four different images of the book and uploaded these:
 
@@ -62,14 +62,33 @@ We made one of these light houses for each collection in the project:
 
 ![The three AR Light houses](https://scriptotek.github.io/ar-project/assets/AR_lighthouses.png)
 
-The only issue we ran into is that Wikitude renders all images in greyscale, and we initially had the images identical except for the color of the paint on the lighthouse. After adding individual text placed at different areas of the image, the app managed to separate them and correctly identify the corresponding collection.
+The only issue we ran into is that Wikitude renders all images in greyscale, and we initially had the images identical except for the color of the paint on the lighthouse. After adding individual text placed in different areas of the image, the app managed to separate them and correctly identify the corresponding collection.
 
 ![AR Light Houses remade](https://scriptotek.github.io/ar-project/assets/AR-lighthouses_corrected.png)
 
-A final note is that we had to print out the light house images and take a picture of them the same way we did for the books with regards to lighting in order for the app to reliably recognize the images. To simply use the image from the computer was not reliable.
-
+A final note is that we had to print out the light house images and take a picture of them the same way we did for the books with regards to lighting in order for the app to consistently recognize the images. To simply use the image from the computer was not reliable.
 
 ## Javascript SDK
+
+For javascript development we downloaded the [Wikitude SDK for Android](https://www.wikitude.com/download-wikitude-sdk-for-android/), the version we worked with was 8.1 (october 2018).
+Over all it was quite easy to get out own version up and running, the [documentation](https://www.wikitude.com/external/doc/documentation/latest/android/gettingstartedandroid.html) is good and there is a [reference](https://www.wikitude.com/external/doc/documentation/latest/Reference/JavaScript%20API/index.html) as well.
+It basically allows you to program an app entirely in javascript and then package it to an android phone as APK using [Android Studio](https://developer.android.com/studio/).
+
+Here is a good [Youtube tutorial](https://www.youtube.com/watch?v=ux4HbnUjNMc&t=23s) on how to set up Wikitude Android SDK with Android studio.
+
+## Summary
+Creating an AR app in a library setting with Wikitude was over all a good experience, but with regards to practical solutions offered by their platform (and other platforms) it is at the moment (fall 2018) not realistic to implement full scale AR in a library today. The main reasons are:
+
+* Unreliable detection of book covers
+  * Leads to extensive and unrealistic work load for taking multiple photographs of all books in different lighting conditions.
+  * A better AI for recognizing images/items is needed, so that automated adding of target images from API's can be done.
+* No real wayfinding or localization
+  * A persistent point cloud mesh is the only realistic solutions for libraries with a limited budget
+
+As side-note on accessibility: A web based platform that can seamlessly be integrated into a web page without having to install an app will ease accessiblity and promt usage, such as Google's [ARCore](https://developers.google.com/ar/) and Apple's [ARKit](https://developer.apple.com/arkit/). Currently (as of late 2018) they have not come far enough for this purpose, but might well have in a few years.
+
+
+
 
 
 
