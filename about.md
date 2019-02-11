@@ -8,7 +8,7 @@ Augmented reality (AR) is about freeing digital information from the screen and 
 
 The goal of this project is to find out how libraries can use AR to give better service to patrons. 
 
-We have also made a short ![video](https://www.youtube.com/watch?v=-TlSncJ6biY) to visualize how we imagin AR could be used in the future library. In this video we make the assumption that AR will be provided through spesialized glasses. If this happens, it is still quite far in the future. Therefore, on these pages we have focused on mobile AR. 
+We have also made a short [video](https://www.youtube.com/watch?v=-TlSncJ6biY) to visualize how we imagin AR could be used in the future library. In this video we make the assumption that AR will be provided through spesialized glasses. If this happens, it is still quite far in the future. Therefore, on these pages we have focused on mobile AR. 
 
 Please, feel free to contact us if you have questions or comments. 
 
