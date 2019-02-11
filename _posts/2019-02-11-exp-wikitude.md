@@ -53,11 +53,11 @@ Due to the time requirements capturing and editing four differently lighted imag
 
 As described in the section on the development of the prototype, we had hoped to be able to use Scence Recognition as a substitute for mesh cloud localization. Unfortunately, Scence Reconition proved to be highly unstable and we had to come up with an image target based solution.
 
-We ended up using image recogntion on three different "AR Light house"-image targets that users would need to scan to get directions.
+We ended up using image recogntion on three different "AR Light house"-image targets that users would need to scan in order to get directions.
 We made one of these light houses for each collection in the project:
 
 * The Main Book Collection (a collection of all science fields), approx. 8 000 books
-* The 42 Collection (a collection of popular science), approx. 5 000
+* The 42 Collection (a collection of popular science), approx. 5 000 books
 * The Science Fiction collection, approx 10 000 books
 
 ![The three AR Light houses](https://scriptotek.github.io/ar-project/assets/AR_lighthouses.png)
@@ -71,8 +71,8 @@ A final note is that we had to print out the light house images and take a pictu
 ## Javascript SDK
 
 For javascript development we downloaded the [Wikitude SDK for Android](https://www.wikitude.com/download-wikitude-sdk-for-android/), the version we worked with was 8.1 (october 2018).
-Over all it was quite easy to get out own version up and running, the [documentation](https://www.wikitude.com/external/doc/documentation/latest/android/gettingstartedandroid.html) is good and there is a [reference](https://www.wikitude.com/external/doc/documentation/latest/Reference/JavaScript%20API/index.html) as well.
-It basically allows you to program an app entirely in javascript and then package it to an android phone as APK using [Android Studio](https://developer.android.com/studio/).
+Over all it was quite easy to get our own version up and running, the [documentation](https://www.wikitude.com/external/doc/documentation/latest/android/gettingstartedandroid.html) is good and there is a [reference](https://www.wikitude.com/external/doc/documentation/latest/Reference/JavaScript%20API/index.html) as well.
+The JavaScript API basically allows you to program an app entirely in JavaScript and then package it to an Android phone as APK using [Android Studio](https://developer.android.com/studio/).
 
 Here is a good [Youtube tutorial](https://www.youtube.com/watch?v=ux4HbnUjNMc&t=23s) on how to set up Wikitude Android SDK with Android studio.
 
@@ -85,7 +85,7 @@ Creating an AR app in a library setting with Wikitude was over all a good experi
 * Lacks proper wayfinding or localization
   * A persistent point cloud mesh is a better solution than having potentially hundreds of target images that users have to get up and close to. 
 
-As side-note on accessibility: A web based platform that can seamlessly be integrated into a web page without having to install an app will ease accessiblity and promt usage, such as Google's [ARCore](https://developers.google.com/ar/) and Apple's [ARKit](https://developer.apple.com/arkit/). Currently (as of late 2018) they have not come far enough for this purpose, but might well have in a few years.
+As a side-note on accessibility: A web based platform that can seamlessly be integrated into a web page without having to install an app will ease accessiblity and promt usage, such as Google's [ARCore](https://developers.google.com/ar/) and Apple's [ARKit](https://developer.apple.com/arkit/). Currently (as of late 2018) they have not come far enough for this purpose, but might well have in a few years.
 
 
 
