@@ -51,7 +51,7 @@ Due to the time requirements capturing and editing four differently lighted imag
 
 ### Working with wayfinding
 
-As described in the section on the development of the prototype, we had hoped to be able to use Scence Recognition as a substitute for mesh cloud localization. Unfortunately, Scence Reconition proved to be highly unstable and we had to come up with an image target based solution. This technology seemes to be quite new to Wikitude and the [documentation is rather thin](https://www.wikitude.com/documentation/latest/android/objecttracking.html)
+As described in the section on the development of the prototype, we had hoped to be able to use Scence Recognition as a substitute for mesh cloud localization. Unfortunately, Scence Reconition proved to be highly unstable and we had to come up with an image target based solution.
 
 We ended up using image recogntion on three different "AR Light house"-image targets that users would need to scan to get directions.
 We made one of these light houses for each collection in the project:
@@ -82,8 +82,8 @@ Creating an AR app in a library setting with Wikitude was over all a good experi
 * Unreliable detection of book covers
   * Leads to extensive and unrealistic work load for taking multiple photographs of all books in different lighting conditions.
   * A better AI for recognizing images/items is needed, so that automated adding of target images from API's can be done.
-* No real wayfinding or localization
-  * A persistent point cloud mesh is the only realistic solutions for libraries with a limited budget
+* Lacks proper wayfinding or localization
+  * A persistent point cloud mesh is a better solution than having potentially hundreds of target images that users have to get up and close to. 
 
 As side-note on accessibility: A web based platform that can seamlessly be integrated into a web page without having to install an app will ease accessiblity and promt usage, such as Google's [ARCore](https://developers.google.com/ar/) and Apple's [ARKit](https://developer.apple.com/arkit/). Currently (as of late 2018) they have not come far enough for this purpose, but might well have in a few years.
 
