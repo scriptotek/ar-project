@@ -12,7 +12,7 @@ Experiences (both positive and negative) when creating an AR app with Wikitude i
 
 In this section, we go through the experiences we had when developing the AR prototype specifically with Wikitude, being the platform we decided on. Note that we would probably have had similar with Wikitude as with other platforms (such as Vuforia), since many of the challenges are non-platform specific. We recommend you first read the blog post on [Designing the prototype](https://scriptotek.github.io/ar-project/blog/2019/01/17/wikitude.html) as an intro to our experiences with Wikitude.
 
-##Initial evaluation
+## Initial evaluation
 
 As described in the blog post on [evaluating the different platforms](https://scriptotek.github.io/ar-project/platform-evaluation/), we made the following evaluation of Wikitude after some initial testing:
 
@@ -24,7 +24,7 @@ As described in the blog post on [evaluating the different platforms](https://sc
 
 Since no platform (as of october 2018) had a properly functioning mesh cloud, which really is a requirement for proper indoor localization without resorting to some kind of beacon technology, our other most important criterias were price and a programming language that we're familiar with. As Wikitude both offered a free license for educational institutions and also a Javascript SDK, we ended up developing the prototype with Wikitude.
 
-##Wikitude Studio
+## Wikitude Studio
 
 [Wikitude studio](https://www.wikitude.com/external/doc/documentation/studio/introduction.html#introduction-to-studio) is a site for developers to upload images they want as targets (what the AR-app reacts to), in our case this would be images of book covers.
 
@@ -36,13 +36,16 @@ We uploaded first the image provided by our vendor, but this image had too low q
 ![Sapiens inital book cover images](https://scriptotek.github.io/ar-project/assets/sapiens_bad_covers.png)
 
 
+The app did not react to the high resolution image at all, and we noticed that it was slightly different than our cover, for example the top text "The Sunday Times Top Ten bestseller" did not exist on our cover, instead it said "The Million Copy Bestseller" and also the bottom recommendation was different.
+
+We then managed to find a clear, high resolution exact replica of our book's cover, but the app still did not respond. We found out that the only way to get the app to recognize the book cover was to take a picture of our physical book and upload this image to Wikitude!
+
+In order to accomodate different lighting situations and maximize the chance of recognition, we took four different images of the book and uploaded these:
+
+![Sapiens manual cover images](https://scriptotek.github.io/ar-project/assets/sapiens_all_real_covers.png)
 
 
-
-
-The 
-
-##Javascript SDK
+## Javascript SDK
 
 
 
