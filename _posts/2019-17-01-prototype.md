@@ -3,7 +3,7 @@ layout: post
 title:  "Designing the prototype"
 author: kyrretl
 date:   2019-01-17 18:15:00
-categories: AR web WebXR javascript
+categories: AR Design Development Wikitude Android javaScript
 ---
 
 ![Concept sketch for the final AR prototype](https://scriptotek.github.io/ar-project/assets/sketch.png "Concept sketch for the final AR prototype")
