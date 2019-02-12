@@ -105,7 +105,7 @@ Similarly, using out catalogue API, we also wanted a way for a user to find more
 ## Read more
 
 * [Experiences with Wikitude](https://scriptotek.github.io/ar-project/blog/2019/01/17/exp-wikitude.html)
-* Finished prototype
+* [The finalized app](https://scriptotek.github.io/ar-project/blog/2019/01/17/exp-final-app.html)
 
 ## Sources
 * [Wikitude](http://www.wikitude.com)
