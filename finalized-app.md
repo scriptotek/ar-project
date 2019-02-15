@@ -4,8 +4,10 @@ title: The finalized app
 permalink: /finalized-app/
 ---
 
-# Description and practical use of the final application in the library
+
 ![All targets used in AR app](https://scriptotek.github.io/ar-project/assets/all_targets.png "All targets used in AR app")
+
+Here we describe the final version of the AR Libray Projects app and its practical use in the library.
 
 ## The physical items used in the app
 We photographed the covers of four books, and we created three location targets for three collections.
@@ -43,11 +45,11 @@ SciFi Collection | 10000 | Science fiction
 
 **The main functionality of the app is to give the user:**
 
-**1. AR Collection information:**
+1. AR Collection information:
    1. Discription of collection
    2. Wayfinding to collection of interest
    3. Shelf location of book of interest
-**2. AR Book information:**
+2. AR Book information:
    1. Sleeve description
    2. Related books - similar books that share at least one subject heading
    3. More books - more books from same author
