@@ -11,7 +11,7 @@ ref: home
 
 The two functionalities we want this prototype to have are:
 * Wayfinding (locating books in the library)
-* Eextra information on books (metadata)
+* Extra information on books (metadata)
 
 We are using mobile phones as physical units (rather than eyeglasses or head mounted displays) because we see this as more practical and available at the moment (late 2018).
 
