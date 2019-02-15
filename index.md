@@ -33,3 +33,11 @@ As part of the project, we have evaluated 7 different platforms:
 ## Blog
 
 Check out [the project blog](blog/) for updates from the project and our AR prototype app.
+
+## The finished prototype
+
+Description of [the finalized app](https://scriptotek.github.io/ar-project/finalized-app.html)
+
+## The code
+
+Download the code [here](https://scriptotek.github.io/ar-project/finalized-app.html)
