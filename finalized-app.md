@@ -73,11 +73,9 @@ We have a [Youtube video](https://www.youtube.com/watch?v=jSfdG_45iqA) demonstra
 ## Screenshots
 These are four screenshots of the functioning prototype:
 
-1) Scanning book cover displaying the metadata available for the book (Sapiens by Yuval Harari) and 2) Browsing similar books:
-![Scanning book and similar books](https://scriptotek.github.io/ar-project/assets/screenshot_1.png "Scanning book and similar books")
+1) Scanning book cover displaying metadata available for the book (Sapiens by Yuval Harari), 2) Browsing related books, 3) Getting directions to a different collection containing related book (Brave New World is in the Scifi Collection) and 4) Arriving at the Scifi Collection getting information about the collection and shelf location of book:
+![Screenshost of app](https://scriptotek.github.io/ar-project/assets/screenshot_1.png "Screenshost of app")
 
-3) Getting directions to different collection containing book (Brave New World is in the Scifi Collection) and 4) Arriving at the Scifi Collection and getting information about the collection and shelf location of book:
-![Collection wayfinding and information](https://scriptotek.github.io/ar-project/assets/screenshot_2.png "Collection wayfinding and information")
 
 ## Blog
 * Read our [blog](https://scriptotek.github.io/ar-project/blog/) on how we developed the app.
