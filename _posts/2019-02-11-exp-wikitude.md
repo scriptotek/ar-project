@@ -17,7 +17,7 @@ In this section, we go through the experiences we had when developing the AR pro
 As described in the blog post on [evaluating the different platforms](https://scriptotek.github.io/ar-project/platform-evaluation/), we made the following evaluation of Wikitude after some initial testing:
 
 **Benefits and drawbaks** 
-* Functionality: Well develped, stable, fast and reliable. Does not have meshing or mesh cloud, but has image based scence cloud with image, scence and object recognition.
+* Functionality: Well develped, stable, fast and reliable. Does not have mesh cloud, but has image based cloud with image, scene and object recognition.
 * Accessibility: Has a javsacript API for communication SDK for Android (among others).
 * Ease of implementation: Well documented with examples and some video tutorials, blogs and forum.
 * Price: Free educational license, limited to one Android and one iPhone (in our case only Android as we did not have the opportunity to test with iPhone).
@@ -81,9 +81,9 @@ Creating an AR app in a library setting with Wikitude was over all a good experi
 
 * Unreliable detection of book covers
   * Leads to extensive and unrealistic work load for taking multiple photographs of all books in different lighting conditions.
-  * A better AI for recognizing images/items is needed, so that automated adding of target images from API's can be done.
+  * A better AI for recognizing images/items is needed, so that automated adding of target images from APIs can be done.
 * Lacks proper wayfinding or localization
-  * A persistent point cloud mesh is a better solution than having potentially hundreds of target images that users have to get up and close to. 
+  * A persistent mesh cloud is a better solution than having to rely on potentially hundreds of target images that users have to get up and close to. 
 
 As a side-note on accessibility: A web based platform that can seamlessly be integrated into a web page without having to install an app will ease accessiblity and promt usage, such as Google's [ARCore](https://developers.google.com/ar/) and Apple's [ARKit](https://developer.apple.com/arkit/). Currently (as of late 2018) they have not come far enough for this purpose, but might well have in a few years.
 
