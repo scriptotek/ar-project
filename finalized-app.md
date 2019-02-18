@@ -56,7 +56,7 @@ SciFi Collection | 10000 | Science fiction
    4. Video (as file on server or from Youtube)
    5. Wikipedia 
 
-**The normal expected procedure using the app is as follows:**
+**Expected procedure using the app is as follows:**
 
 1. User gets information about the collection from an AR Light House:
 ![Get info about collection](https://scriptotek.github.io/ar-project/assets/app_desc_1.png "Scans AR Light House to get info about collection")
@@ -70,6 +70,9 @@ SciFi Collection | 10000 | Science fiction
 ## Demonstration video
 We have a [Youtube video](https://www.youtube.com/watch?v=jSfdG_45iqA) demonstrating actual use of the prototype.
 
-## Additional info
+## Blog
 * Read our [blog](https://scriptotek.github.io/ar-project/blog/) on how we developed the app.
-* Download the [code](https://scriptotek.github.io/ar-project/blog/)
+
+## Downloads
+* Download the [app](https://github.com/scriptotek/ar-project-app/blob/master/README.md)
+* Download [target images](https://scriptotek.github.io/ar-project/assets/targets.zip) (the book covers and AR Light Houses)
