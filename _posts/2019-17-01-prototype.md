@@ -10,10 +10,10 @@ categories: AR Design Development Wikitude Android javaScript
 Implementing functionalities and designing the prototype with Wikitude
 <!-- more -->
 
-After reviewing six different AR-platforms and testing most of them ([see here for details](https://scriptotek.github.io/ar-project/platform-evaluation/)), we decided on Wikitude and started the process of fleshing out a prototype based on the possibilities and limitations of the chosen platform. In this blog post we write *mainly* about the design and functionality of the prototype app - for more in depth about our experiences with the Wikitude you can read ([this post](https://scriptotek.github.io/ar-project/blog/2019/01/17/exp-wikitude.html)).
+After reviewing six different AR-platforms and testing most of them ([see here for details](https://scriptotek.github.io/ar-project/platform-evaluation/)), we decided on Wikitude and started the process of fleshing out a prototype based on the possibilities and limitations of the chosen platform. In this blog post we write *mainly* about the design and functionality of the prototype app - for more in depth about our experiences with the Wikitude you can read ([this post](https://scriptotek.github.io/ar-project/blog/2019/01/17/exp-wikitude.html)). But we recommend you continue reading here first.
 
 ## Functionalities of the prototype
-We wanted to offer both `wayfinding` - locating books on the shelves in the library - and `metadata` - extending the information you can get from a book with AR.
+We wanted to offer both `wayfinding` - locating books on the shelves in the library - and `metadata` - extending the information you can get from a book when AR is used.
 
 ## Wayfinding
 The first functionality we looked into was wayfinding. With the main purpose of locating books inside a library we needed good support for *indoor wayfinding*.
@@ -21,7 +21,7 @@ The first functionality we looked into was wayfinding. With the main purpose of 
 As of 2018 the possibilties of using mobile phones for indoor wayfinding or localizing is unfortunately still quite limited. GPS-sattelites do not penetrate the insides of buildings and adapting WiFi-networks for trilateration usually yield low precision (with error margins of several meters often placing the user in a different room). Solutions require specialized beacons, specialized WiFi-points or other third party technologies, taking time and resources to implement.
 We wanted to see if we could offer wayfinding without the costly and time consuming alternatives, ideally only requiring a phone.
 
-Wikitude offer different ways of recognizing objects in the environment or the environment itself:
+Wikitude offers different ways of recognizing objects in the environment or the environment itself:
 
 * Scene reconition
   * Images of large (mainly outdoor) scenes. 
@@ -32,13 +32,13 @@ Wikitude offer different ways of recognizing objects in the environment or the e
 
 
 ### Scene recognition test
-We wanted first to see if we could use a *Scene recognition* approach for wayfinding. We hoped we could take pictures of the library rooms, halls, shelves, staircases, the reception, etc, and use these to let the prototype app recognize where was is at any time.
+We wanted first to see if we could use a *Scene recognition* approach for wayfinding. We hoped we could take pictures of the library rooms, halls, shelves, staircases, the reception, etc, and use these to let the prototype app recognize where it was.
 
 We did preliminary tests using shots of the office and some shelves nearby to get a sense of how well scence recognition would work with wayfinding. Below is an example of a typical library setting, and the prototype is displaying an arrow guiding the user to a specific collection.
 
 ![Testing of wayfinding inside the library](https://scriptotek.github.io/ar-project/assets/wayfinding_scene_test.png "Testing of wayfinding inside the library")
 
-For the prototype to show a wayfinding arrow like the one in the image above, it needs to recongnize where it is at any time, regardless of the angle of the viewfinder. To maximise the chances of scence regonition, we took multiple overlapping shots of the room from different angles (around 20 images). Unfortunately, it did not work as we hoped. The issues we faced were that the scene failed to be recognized more often than not, making the guiding arrow disappear, jitter or get stuck pointing in a wrong direction. This happened either if you stood at an angle where no (or too few) pictures were taken of the scene, or if the scene itself had changed. As seen in the image above, there are moving elements in a library that could potentially change the scene: we have a touch table on wheels, exhibition shelves that change content, a user sitting in a moveable chair, etc. Also, at any time there will be users standing/moving about obscuring the scene. We found the scene recognition solutuion to be untenable due to the instability of detection. This was unfortunately not very surprising since scence recognition is meant to be used outside on large scale scenery that doesn't change nor gets obscured enough to prevent detection.
+For the prototype to show a wayfinding arrow like the one in the image above, it needs to recongnize where it is at any time, regardless of the angle of the viewfinder. To maximize the chances of scence regonition, we took multiple overlapping shots of the room from different angles (around 20 images). Unfortunately, it did not work as we hoped. The issues we faced were that the scene failed to be recognized more often than not, making the guiding arrow disappear, jitter or get stuck pointing in a wrong direction. This happened either if you stood at an angle where no (or too few) pictures were taken of the scene, or if the scene itself had changed. As seen in the image above, there are moving elements in a library that could potentially change the scene: we have a touch table on wheels, exhibition shelves that change content, a user sitting in a moveable chair, etc. Also, at any time there will be users standing/moving about obscuring the scene. We found the scene recognition solutuion to be untenable due to the instability of detection. This was unfortunately not very surprising since scence recognition is meant to be used outside on large scale scenery that doesn't change nor gets obscured enough to prevent detection.
 
 ### Image recognition test
 Since we couldn't get scene recogntition to work reliably, we had to resort to image recogntion with specific target images that users would have to get up and close to. Obviously not preferrable to a system that guides the user without the user having to do anyting for it - but it was the only option available since we did not have the time or resources to use custom third party hardware for localization. 
@@ -49,7 +49,9 @@ We chose an image of a lighthouse as a wayfinding anchor. It's easy to recognize
 
 ![The three different AR anchor images](https://scriptotek.github.io/ar-project/assets/AR_lighthouses.png "The three different AR anchor images")
 
-This way the prototype can separate the different target images (by color) and know which location it is at, and users see a common recognizabe theme. Below we see the prototype reacting to the red AR lighthouse image:
+This way the prototype can separate the different target images (by color) and know which location it is at, and users see a common recognizabe theme. *Update: We realized later that Wikitude renders target images in greyscale, so we had to change the AR Light Houses' appearance. To read more about this, see [The finalized app](https://scriptotek.github.io/ar-project/finalized-app/).* 
+
+Below we see the prototype reacting to the red AR lighthouse image:
 
 ![Testing of wayfinding inside the library](https://scriptotek.github.io/ar-project/assets/wayfinding_image_test.png "Testing of wayfinding inside the library")
 
