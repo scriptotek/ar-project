@@ -39,5 +39,4 @@ Check out [the project blog](blog/) for updates from the project and our AR prot
 Description of [the finalized app](https://scriptotek.github.io/ar-project/finalized-app/)
 
 ## The code
-
-Download the code [here](https://scriptotek.github.io/ar-project/finalized-app/)
+Download the code [here](https://github.com/scriptotek/ar-project-app/blob/master/README.md)
